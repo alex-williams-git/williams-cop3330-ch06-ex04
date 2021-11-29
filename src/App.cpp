@@ -8,33 +8,9 @@
 #include <stdlib.h>
 #include <string>
 #include <vector>
+#include "Name_value.cpp"
 
 using namespace std;
-
-class Name_value{
-    // getters and setters and constructor
-    public:
-    Name_value(string string, int value){
-        setString(string);
-        setValue(value);
-    }
-    void setString(string s){
-        name = s;
-    }
-    string getString(){
-        return name;
-    }
-    void setValue(int v){
-        score = v;
-    }
-    int getValue(){
-        return score;
-    }
-
-    private:
-    string name;
-    int score;
-};
 
 // function to check vector for repeat names
 void checkVector(vector<Name_value> vector, string string){
